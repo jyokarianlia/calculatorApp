@@ -1,0 +1,328 @@
+$Strong-cyan: hsl(172, 67%, 45%);
+
+//Color Neutral
+
+$Very-dark-cyan: hsl(183, 100%, 15%);
+$Dark-grayish-cyan: hsl(186, 14%, 43%);
+$Dark-grayish-cyan2: hsl(184, 14%, 56%);
+$Light-grayish-cyan: hsl(185, 41%, 84%);
+$Light-grayish-cyan2: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Space Mono', monospace;
+    background-color: $Light-grayish-cyan;
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .imgLogo {
+        margin: 2em;
+    }
+
+    .contenedor {
+        background-color: $White;
+        width: 100vw;
+        border-radius: 1em 1em 0px 0px;
+        color: $Dark-grayish-cyan2;
+        padding-bottom: .5em;
+
+        .bloque1 {
+            padding: 1em;
+
+            .sectionBill {
+                text-align: left;
+
+                input {
+                    &[type=number] {
+                        -webkit-appearance: textfield !important;
+                        -moz-appearance:textfield !important;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:focus {
+                        border-color: rgba($color: $Light-grayish-cyan2, $alpha: 0.3);
+                    }
+                }
+
+                label {
+                    display: block;
+                    font-size: .75em;
+                }
+
+                span {
+                    position: relative;
+                    top: -2em;
+                    left: .6em;
+
+                    img {
+                        width: .7em;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    text-align: right;
+                    background-color: $Light-grayish-cyan2;
+                    color: $Dark-grayish-cyan;
+                    border: none;
+                    border-radius: 10px;
+                    padding: .15em .4em;
+                }
+            }
+
+            .seccionPorcentaje {
+                text-align: left;
+                display: flex;
+                flex-wrap: wrap;
+                gap: .7em;
+
+                .label {
+                    width: 100%;
+                    display: block;
+                    font-size: .75em;
+
+                    .dnone {
+                        display: none;
+                    }
+                    
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+
+                div {
+                    width: 47%;
+                    background-color: $Dark-grayish-cyan2;
+                    color: $White;
+                    font-weight: 700;
+                    text-align: center;
+                    border-radius: 5px;
+                    padding: .4em .2em;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    .input {
+                        display: none;
+                    }
+
+                    label {
+                        display: block;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .selected {
+                    background-color: $Light-grayish-cyan;
+                    border: 3px solid $Dark-grayish-cyan2;
+                    color: $Dark-grayish-cyan;
+                }
+
+                .custom {
+                    background-color: $Light-grayish-cyan2;
+                    padding: 0;
+                    
+                    input {
+                        &[type=number] {
+                            -webkit-appearance: textfield !important;
+                            -moz-appearance:textfield !important;
+                        }
+                    }
+
+                    .txtCustom {
+                        width: 96%;
+                        height: 96%;
+                        font-size: 1em;
+                        background-color: $Light-grayish-cyan2;
+                        border: none;
+                        text-align: right;
+                        padding: 0px .5em;
+                        color: $Dark-grayish-cyan;
+                        font-weight: 700;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .sectionPersonas {
+                margin-top: 2.5em;
+                text-align: left;
+
+                label {
+                    font-size: .73em;
+                    margin-left: -1.6em;
+                }
+
+                .nozero {
+                    width: 55%;
+                    color: red;
+                    display: none;
+                    font-size: .65em;
+                    text-align: right;
+                }
+
+                .dinblock {
+                    display: inline-block;
+                }
+
+                input {
+                    width: 100%;
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    text-align: right;
+                    background-color: $Light-grayish-cyan2;
+                    color: $Dark-grayish-cyan;
+                    border: none;
+                    border-radius: 10px;
+                    padding: .15em .4em;
+                    margin-top: .3em;
+                    margin-bottom: .3em;
+
+                    &[type=number] {
+                        -webkit-appearance: textfield !important;
+                        -moz-appearance:textfield !important;
+                    }
+                }
+
+                span {
+                    position: relative;
+                    top: 2.5em;
+                    left: .8em;
+
+                    img {
+                        width: .7em;
+                    }
+                }
+            }
+        }
+
+        .bloque2 {
+            background-color: $Dark-grayish-cyan;
+            border-radius: 9px;
+            padding: 1em .4em;
+            margin: .8em;
+            
+            .subBloque {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: left;
+
+                label {
+                    width: 38%;
+                    color: $Light-grayish-cyan;
+                    font-size: .65em;
+
+                    span {
+                        color: $White;
+                        font-weight: 700;
+                    }
+                }
+
+                .span {
+                    background-color: $Dark-grayish-cyan;
+                    color: $Strong-cyan;
+                    text-align: right;
+                    font-size: 2em;
+                    font-weight: 700;
+                    border: none;
+                    width: 84%;
+                }
+            }
+
+            .pos2 {
+                margin: 1em 0px;
+            }
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            padding: .5em;
+            font-size: 1em;
+            font-weight: 700;
+            margin-top: 1.3em;
+            border-radius: 6px;
+            color: $Very-dark-cyan;
+            text-transform: uppercase;
+            background-color: $Strong-cyan;
+
+            &:hover {
+                background-color: $Light-grayish-cyan;
+                cursor: pointer;
+            }
+        }
+
+        .isDisabled {
+            background-color: $Dark-grayish-cyan2;
+            color: $Light-grayish-cyan;
+        }
+    }
+
+    @media (min-width: 720px) {
+        height: 900px;
+        justify-content: space-around;
+
+        .contenedor {
+            width: 65vw;
+            display: flex;
+            margin-bottom: 10%;
+            border-radius: 20px;
+            justify-content: center;
+
+            .bloque1, .bloque2 {
+                width: 48%;
+            }
+
+            .bloque1 {
+                .seccionPorcentaje {
+                    div {
+                        width: 30%;
+                    }
+                }
+
+                .sectionPersonas {
+                    .dinbloc {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .bloque2 {
+                padding: 1.5em;
+
+                .subBloque {
+                    margin-top: 1em;
+                }
+
+                button {
+                    margin-top: 6.2em;
+                }
+            }
+        }
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; a { color: hsl(228, 45%, 44%); } }

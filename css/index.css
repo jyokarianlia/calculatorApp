@@ -1,0 +1,336 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app .imgLogo {
+  margin: 2em;
+}
+
+#app .contenedor {
+  background-color: white;
+  width: 100vw;
+  border-radius: 1em 1em 0px 0px;
+  color: #7f9c9f;
+  padding-bottom: .5em;
+}
+
+#app .contenedor .bloque1 {
+  padding: 1em;
+}
+
+#app .contenedor .bloque1 .sectionBill {
+  text-align: left;
+}
+
+#app .contenedor .bloque1 .sectionBill input[type=number] {
+  -webkit-appearance: textfield !important;
+  -moz-appearance: textfield !important;
+}
+
+#app .contenedor .bloque1 .sectionBill input:hover {
+  cursor: pointer;
+}
+
+#app .contenedor .bloque1 .sectionBill input:focus {
+  border-color: rgba(244, 250, 250, 0.3);
+}
+
+#app .contenedor .bloque1 .sectionBill label {
+  display: block;
+  font-size: .75em;
+}
+
+#app .contenedor .bloque1 .sectionBill span {
+  position: relative;
+  top: -2em;
+  left: .6em;
+}
+
+#app .contenedor .bloque1 .sectionBill span img {
+  width: .7em;
+}
+
+#app .contenedor .bloque1 .sectionBill input {
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: right;
+  background-color: #f4fafa;
+  color: #5e7a7d;
+  border: none;
+  border-radius: 10px;
+  padding: .15em .4em;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .7em;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .label {
+  width: 100%;
+  display: block;
+  font-size: .75em;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .label .dnone {
+  display: none;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .label:hover {
+  cursor: pointer;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje div {
+  width: 47%;
+  background-color: #7f9c9f;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  padding: .4em .2em;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje div:hover {
+  cursor: pointer;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje div .input {
+  display: none;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje div label {
+  display: block;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje div label:hover {
+  cursor: pointer;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .selected {
+  background-color: #c5e4e7;
+  border: 3px solid #7f9c9f;
+  color: #5e7a7d;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .custom {
+  background-color: #f4fafa;
+  padding: 0;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .custom input[type=number] {
+  -webkit-appearance: textfield !important;
+  -moz-appearance: textfield !important;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .custom .txtCustom {
+  width: 96%;
+  height: 96%;
+  font-size: 1em;
+  background-color: #f4fafa;
+  border: none;
+  text-align: right;
+  padding: 0px .5em;
+  color: #5e7a7d;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+#app .contenedor .bloque1 .sectionPersonas {
+  margin-top: 2.5em;
+  text-align: left;
+}
+
+#app .contenedor .bloque1 .sectionPersonas label {
+  font-size: .73em;
+  margin-left: -1.6em;
+}
+
+#app .contenedor .bloque1 .sectionPersonas .nozero {
+  width: 55%;
+  color: red;
+  display: none;
+  font-size: .65em;
+  text-align: right;
+}
+
+#app .contenedor .bloque1 .sectionPersonas .dinblock {
+  display: inline-block;
+}
+
+#app .contenedor .bloque1 .sectionPersonas input {
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: right;
+  background-color: #f4fafa;
+  color: #5e7a7d;
+  border: none;
+  border-radius: 10px;
+  padding: .15em .4em;
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+#app .contenedor .bloque1 .sectionPersonas input[type=number] {
+  -webkit-appearance: textfield !important;
+  -moz-appearance: textfield !important;
+}
+
+#app .contenedor .bloque1 .sectionPersonas span {
+  position: relative;
+  top: 2.5em;
+  left: .8em;
+}
+
+#app .contenedor .bloque1 .sectionPersonas span img {
+  width: .7em;
+}
+
+#app .contenedor .bloque2 {
+  background-color: #5e7a7d;
+  border-radius: 9px;
+  padding: 1em .4em;
+  margin: .8em;
+}
+
+#app .contenedor .bloque2 .subBloque {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+#app .contenedor .bloque2 .subBloque label {
+  width: 38%;
+  color: #c5e4e7;
+  font-size: .65em;
+}
+
+#app .contenedor .bloque2 .subBloque label span {
+  color: white;
+  font-weight: 700;
+}
+
+#app .contenedor .bloque2 .subBloque .span {
+  background-color: #5e7a7d;
+  color: #26c0ab;
+  text-align: right;
+  font-size: 2em;
+  font-weight: 700;
+  border: none;
+  width: 84%;
+}
+
+#app .contenedor .bloque2 .pos2 {
+  margin: 1em 0px;
+}
+
+#app .contenedor button {
+  width: 100%;
+  border: none;
+  padding: .5em;
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 1.3em;
+  border-radius: 6px;
+  color: #00494d;
+  text-transform: uppercase;
+  background-color: #26c0ab;
+}
+
+#app .contenedor button:hover {
+  background-color: #c5e4e7;
+  cursor: pointer;
+}
+
+#app .contenedor .isDisabled {
+  background-color: #7f9c9f;
+  color: #c5e4e7;
+}
+
+@media (min-width: 720px) {
+  #app {
+    height: 900px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #app .contenedor {
+    width: 65vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #app .contenedor .bloque1, #app .contenedor .bloque2 {
+    width: 48%;
+  }
+  #app .contenedor .bloque1 .seccionPorcentaje div {
+    width: 30%;
+  }
+  #app .contenedor .bloque1 .sectionPersonas .dinbloc {
+    display: inline-block;
+  }
+  #app .contenedor .bloque2 {
+    padding: 1.5em;
+  }
+  #app .contenedor .bloque2 .subBloque {
+    margin-top: 1em;
+  }
+  #app .contenedor .bloque2 button {
+    margin-top: 6.2em;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=index.css.map */
